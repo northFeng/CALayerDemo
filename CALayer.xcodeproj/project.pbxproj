@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D4D5BC0224F4E17009329C3 /* CATiledLayer14.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D5BBF224F4E17009329C3 /* CATiledLayer14.m */; };
+		8D4D5BC3224F7123009329C3 /* CATransformLayer17.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D5BC2224F7123009329C3 /* CATransformLayer17.m */; };
+		8D824140224A19550039A9CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D82413F224A19550039A9CA /* AppDelegate.m */; };
+		8D824146224A19550039A9CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D824144224A19550039A9CA /* Main.storyboard */; };
+		8D824148224A19570039A9CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D824147224A19570039A9CA /* Assets.xcassets */; };
+		8D82414B224A19570039A9CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D824149224A19570039A9CA /* LaunchScreen.storyboard */; };
+		8D82414E224A19570039A9CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D82414D224A19570039A9CA /* main.m */; };
+		8D824158224A19570039A9CA /* CALayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824157224A19570039A9CA /* CALayerTests.m */; };
+		8D824163224A19570039A9CA /* CALayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824162224A19570039A9CA /* CALayerUITests.m */; };
+		8D824173224A1DB50039A9CA /* OneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824171224A1DB50039A9CA /* OneVC.m */; };
+		8D824174224A1DB50039A9CA /* OneVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D824172224A1DB50039A9CA /* OneVC.xib */; };
+		8D824184224B1DFD0039A9CA /* GFLayerFuntionDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D824183224B1DFD0039A9CA /* GFLayerFuntionDemoVC.m */; };
+		8DC5CB992251B74700A89ACD /* CAShapeLayer12.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5CB982251B74700A89ACD /* CAShapeLayer12.m */; };
+		8DC5CB9C2251B9D600A89ACD /* ChangeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5CB9B2251B9D600A89ACD /* ChangeAnimationView.m */; };
+		8DC5CB9E2251BA2400A89ACD /* ZFChangeAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8DC5CB9D2251BA2400A89ACD /* ZFChangeAnimation.gif */; };
+		8DC5CBA12251BD7B00A89ACD /* GFAnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5CBA02251BD7B00A89ACD /* GFAnimationDemo.m */; };
+		8DC5CBA62251BDC200A89ACD /* OneLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5CBA22251BDC100A89ACD /* OneLoadingAnimationView.m */; };
+		8DC5CBA72251BDC200A89ACD /* ArcToCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5CBA42251BDC100A89ACD /* ArcToCircleLayer.m */; };
+		8DC88FE62251BEB800EACC02 /* OneLoadingAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8DC88FE52251BEB800EACC02 /* OneLoadingAnimation.gif */; };
+		8DF4A40A224CD79200F3A857 /* 傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A409224CD79200F3A857 /* 傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive */; };
+		8DF4A40C224CD7A100F3A857 /* 哪些我们可以和应该做动画哪.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A40B224CD7A100F3A857 /* 哪些我们可以和应该做动画哪.rtfd */; };
+		8DF4A40F224CD94800F3A857 /* CALayer总结（二）CAAnimation.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A40D224CD94800F3A857 /* CALayer总结（二）CAAnimation.webarchive */; };
+		8DF4A410224CD94800F3A857 /* CALayer总结（一）CALayer.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A40E224CD94800F3A857 /* CALayer总结（一）CALayer.webarchive */; };
+		8DF4A416224CE26F00F3A857 /* CALayer3-层的属性.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A412224CE26F00F3A857 /* CALayer3-层的属性.webarchive */; };
+		8DF4A417224CE26F00F3A857 /* CALayer2-创建新的层.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A413224CE26F00F3A857 /* CALayer2-创建新的层.webarchive */; };
+		8DF4A418224CE26F00F3A857 /* CALayer1-简介.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A414224CE26F00F3A857 /* CALayer1-简介.webarchive */; };
+		8DF4A419224CE26F00F3A857 /* CALayer4-自定义层.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A415224CE26F00F3A857 /* CALayer4-自定义层.webarchive */; };
+		8DF4A41C224CE34E00F3A857 /* Core Animation1-简介.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A41A224CE34E00F3A857 /* Core Animation1-简介.webarchive */; };
+		8DF4A41D224CE34E00F3A857 /* Core Animation2-CABasicAnimation.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A41B224CE34E00F3A857 /* Core Animation2-CABasicAnimation.webarchive */; };
+		8DF4A421224DFBAC00F3A857 /* UIView封装动画.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A41E224DFBAB00F3A857 /* UIView封装动画.webarchive */; };
+		8DF4A422224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D(自定义UIImageView控件).webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A41F224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D(自定义UIImageView控件).webarchive */; };
+		8DF4A423224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D绘制基本图形.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A420224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D绘制基本图形.webarchive */; };
+		8DF4A433224F15FF00F3A857 /* CAEmitterLayer5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4A432224F15FF00F3A857 /* CAEmitterLayer5.m */; };
+		8DF4A436224F163F00F3A857 /* CAAnimation0.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4A435224F163F00F3A857 /* CAAnimation0.m */; };
+		8DF4A439224F1D1B00F3A857 /* CALayer7.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4A438224F1D1B00F3A857 /* CALayer7.m */; };
+		8DF4A43C224F1EDC00F3A857 /* CAReplicatorLayer10.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4A43B224F1EDC00F3A857 /* CAReplicatorLayer10.m */; };
+		8DF4A43F224F422400F3A857 /* CAScrollLayer11.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4A43E224F422400F3A857 /* CAScrollLayer11.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D824154224A19570039A9CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D824133224A19550039A9CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D82413A224A19550039A9CA;
+			remoteInfo = CALayer;
+		};
+		8D82415F224A19570039A9CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D824133224A19550039A9CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D82413A224A19550039A9CA;
+			remoteInfo = CALayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D4D5BBE224F4E17009329C3 /* CATiledLayer14.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATiledLayer14.h; sourceTree = "<group>"; };
+		8D4D5BBF224F4E17009329C3 /* CATiledLayer14.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATiledLayer14.m; sourceTree = "<group>"; };
+		8D4D5BC1224F7123009329C3 /* CATransformLayer17.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATransformLayer17.h; sourceTree = "<group>"; };
+		8D4D5BC2224F7123009329C3 /* CATransformLayer17.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATransformLayer17.m; sourceTree = "<group>"; };
+		8D82413B224A19550039A9CA /* CALayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D82413E224A19550039A9CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8D82413F224A19550039A9CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8D824145224A19550039A9CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D824147224A19570039A9CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D82414A224A19570039A9CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D82414C224A19570039A9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D82414D224A19570039A9CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D824153224A19570039A9CA /* CALayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CALayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D824157224A19570039A9CA /* CALayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerTests.m; sourceTree = "<group>"; };
+		8D824159224A19570039A9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D82415E224A19570039A9CA /* CALayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CALayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D824162224A19570039A9CA /* CALayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerUITests.m; sourceTree = "<group>"; };
+		8D824164224A19570039A9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D824170224A1DB50039A9CA /* OneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneVC.h; sourceTree = "<group>"; };
+		8D824171224A1DB50039A9CA /* OneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneVC.m; sourceTree = "<group>"; };
+		8D824172224A1DB50039A9CA /* OneVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneVC.xib; sourceTree = "<group>"; };
+		8D824182224B1DFD0039A9CA /* GFLayerFuntionDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFLayerFuntionDemoVC.h; sourceTree = "<group>"; };
+		8D824183224B1DFD0039A9CA /* GFLayerFuntionDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFLayerFuntionDemoVC.m; sourceTree = "<group>"; };
+		8DC5CB972251B74700A89ACD /* CAShapeLayer12.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAShapeLayer12.h; sourceTree = "<group>"; };
+		8DC5CB982251B74700A89ACD /* CAShapeLayer12.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayer12.m; sourceTree = "<group>"; };
+		8DC5CB9A2251B9D600A89ACD /* ChangeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeAnimationView.h; sourceTree = "<group>"; };
+		8DC5CB9B2251B9D600A89ACD /* ChangeAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeAnimationView.m; sourceTree = "<group>"; };
+		8DC5CB9D2251BA2400A89ACD /* ZFChangeAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ZFChangeAnimation.gif; sourceTree = "<group>"; };
+		8DC5CB9F2251BD7B00A89ACD /* GFAnimationDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFAnimationDemo.h; sourceTree = "<group>"; };
+		8DC5CBA02251BD7B00A89ACD /* GFAnimationDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFAnimationDemo.m; sourceTree = "<group>"; };
+		8DC5CBA22251BDC100A89ACD /* OneLoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneLoadingAnimationView.m; sourceTree = "<group>"; };
+		8DC5CBA32251BDC100A89ACD /* ArcToCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcToCircleLayer.h; sourceTree = "<group>"; };
+		8DC5CBA42251BDC100A89ACD /* ArcToCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcToCircleLayer.m; sourceTree = "<group>"; };
+		8DC5CBA52251BDC100A89ACD /* OneLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneLoadingAnimationView.h; sourceTree = "<group>"; };
+		8DC88FE52251BEB800EACC02 /* OneLoadingAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = OneLoadingAnimation.gif; sourceTree = "<group>"; };
+		8DF4A409224CD79200F3A857 /* 傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive"; sourceTree = "<group>"; };
+		8DF4A40B224CD7A100F3A857 /* 哪些我们可以和应该做动画哪.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "哪些我们可以和应该做动画哪.rtfd"; sourceTree = "<group>"; };
+		8DF4A40D224CD94800F3A857 /* CALayer总结（二）CAAnimation.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CALayer总结（二）CAAnimation.webarchive"; sourceTree = "<group>"; };
+		8DF4A40E224CD94800F3A857 /* CALayer总结（一）CALayer.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CALayer总结（一）CALayer.webarchive"; sourceTree = "<group>"; };
+		8DF4A412224CE26F00F3A857 /* CALayer3-层的属性.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CALayer3-层的属性.webarchive"; sourceTree = "<group>"; };
+		8DF4A413224CE26F00F3A857 /* CALayer2-创建新的层.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CALayer2-创建新的层.webarchive"; sourceTree = "<group>"; };
+		8DF4A414224CE26F00F3A857 /* CALayer1-简介.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CALayer1-简介.webarchive"; sourceTree = "<group>"; };
+		8DF4A415224CE26F00F3A857 /* CALayer4-自定义层.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CALayer4-自定义层.webarchive"; sourceTree = "<group>"; };
+		8DF4A41A224CE34E00F3A857 /* Core Animation1-简介.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Core Animation1-简介.webarchive"; sourceTree = "<group>"; };
+		8DF4A41B224CE34E00F3A857 /* Core Animation2-CABasicAnimation.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Core Animation2-CABasicAnimation.webarchive"; sourceTree = "<group>"; };
+		8DF4A41E224DFBAB00F3A857 /* UIView封装动画.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "UIView封装动画.webarchive"; sourceTree = "<group>"; };
+		8DF4A41F224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D(自定义UIImageView控件).webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "iOS开发UI篇—Quartz2D(自定义UIImageView控件).webarchive"; sourceTree = "<group>"; };
+		8DF4A420224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D绘制基本图形.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "iOS开发UI篇—Quartz2D绘制基本图形.webarchive"; sourceTree = "<group>"; };
+		8DF4A42D224E329300F3A857 /* iOS核心图层.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS核心图层.epub"; sourceTree = "<group>"; };
+		8DF4A431224F15FF00F3A857 /* CAEmitterLayer5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayer5.h; sourceTree = "<group>"; };
+		8DF4A432224F15FF00F3A857 /* CAEmitterLayer5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayer5.m; sourceTree = "<group>"; };
+		8DF4A434224F163F00F3A857 /* CAAnimation0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAAnimation0.h; sourceTree = "<group>"; };
+		8DF4A435224F163F00F3A857 /* CAAnimation0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAAnimation0.m; sourceTree = "<group>"; };
+		8DF4A437224F1D1B00F3A857 /* CALayer7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayer7.h; sourceTree = "<group>"; };
+		8DF4A438224F1D1B00F3A857 /* CALayer7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayer7.m; sourceTree = "<group>"; };
+		8DF4A43A224F1EDC00F3A857 /* CAReplicatorLayer10.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAReplicatorLayer10.h; sourceTree = "<group>"; };
+		8DF4A43B224F1EDC00F3A857 /* CAReplicatorLayer10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAReplicatorLayer10.m; sourceTree = "<group>"; };
+		8DF4A43D224F422400F3A857 /* CAScrollLayer11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAScrollLayer11.h; sourceTree = "<group>"; };
+		8DF4A43E224F422400F3A857 /* CAScrollLayer11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAScrollLayer11.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D824138224A19550039A9CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D824150224A19570039A9CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D82415B224A19570039A9CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D824132224A19550039A9CA = {
+			isa = PBXGroup;
+			children = (
+				8D82413D224A19550039A9CA /* CALayer */,
+				8D824156224A19570039A9CA /* CALayerTests */,
+				8D824161224A19570039A9CA /* CALayerUITests */,
+				8D82413C224A19550039A9CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D82413C224A19550039A9CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D82413B224A19550039A9CA /* CALayer.app */,
+				8D824153224A19570039A9CA /* CALayerTests.xctest */,
+				8D82415E224A19570039A9CA /* CALayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D82413D224A19550039A9CA /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				8DF4A42D224E329300F3A857 /* iOS核心图层.epub */,
+				8DF4A409224CD79200F3A857 /* 傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive */,
+				8DF4A40B224CD7A100F3A857 /* 哪些我们可以和应该做动画哪.rtfd */,
+				8DF4A40E224CD94800F3A857 /* CALayer总结（一）CALayer.webarchive */,
+				8DF4A40D224CD94800F3A857 /* CALayer总结（二）CAAnimation.webarchive */,
+				8DF4A41F224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D(自定义UIImageView控件).webarchive */,
+				8DF4A420224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D绘制基本图形.webarchive */,
+				8DF4A41E224DFBAB00F3A857 /* UIView封装动画.webarchive */,
+				8D82413E224A19550039A9CA /* AppDelegate.h */,
+				8D82413F224A19550039A9CA /* AppDelegate.m */,
+				8D824170224A1DB50039A9CA /* OneVC.h */,
+				8D824171224A1DB50039A9CA /* OneVC.m */,
+				8D824172224A1DB50039A9CA /* OneVC.xib */,
+				8D824182224B1DFD0039A9CA /* GFLayerFuntionDemoVC.h */,
+				8D824183224B1DFD0039A9CA /* GFLayerFuntionDemoVC.m */,
+				8DF4A434224F163F00F3A857 /* CAAnimation0.h */,
+				8DF4A435224F163F00F3A857 /* CAAnimation0.m */,
+				8DF4A431224F15FF00F3A857 /* CAEmitterLayer5.h */,
+				8DF4A432224F15FF00F3A857 /* CAEmitterLayer5.m */,
+				8DF4A437224F1D1B00F3A857 /* CALayer7.h */,
+				8DF4A438224F1D1B00F3A857 /* CALayer7.m */,
+				8DF4A43A224F1EDC00F3A857 /* CAReplicatorLayer10.h */,
+				8DF4A43B224F1EDC00F3A857 /* CAReplicatorLayer10.m */,
+				8DF4A43D224F422400F3A857 /* CAScrollLayer11.h */,
+				8DF4A43E224F422400F3A857 /* CAScrollLayer11.m */,
+				8DC5CB972251B74700A89ACD /* CAShapeLayer12.h */,
+				8DC5CB982251B74700A89ACD /* CAShapeLayer12.m */,
+				8DC5CB9D2251BA2400A89ACD /* ZFChangeAnimation.gif */,
+				8DC5CB9A2251B9D600A89ACD /* ChangeAnimationView.h */,
+				8DC5CB9B2251B9D600A89ACD /* ChangeAnimationView.m */,
+				8D4D5BBE224F4E17009329C3 /* CATiledLayer14.h */,
+				8D4D5BBF224F4E17009329C3 /* CATiledLayer14.m */,
+				8D4D5BC1224F7123009329C3 /* CATransformLayer17.h */,
+				8D4D5BC2224F7123009329C3 /* CATransformLayer17.m */,
+				8DC890262251C03800EACC02 /* AnimationDemo */,
+				8DF4A411224CE25C00F3A857 /* LMJ */,
+				8D824144224A19550039A9CA /* Main.storyboard */,
+				8D824147224A19570039A9CA /* Assets.xcassets */,
+				8D824149224A19570039A9CA /* LaunchScreen.storyboard */,
+				8D82414C224A19570039A9CA /* Info.plist */,
+				8D82414D224A19570039A9CA /* main.m */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		8D824156224A19570039A9CA /* CALayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D824157224A19570039A9CA /* CALayerTests.m */,
+				8D824159224A19570039A9CA /* Info.plist */,
+			);
+			path = CALayerTests;
+			sourceTree = "<group>";
+		};
+		8D824161224A19570039A9CA /* CALayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D824162224A19570039A9CA /* CALayerUITests.m */,
+				8D824164224A19570039A9CA /* Info.plist */,
+			);
+			path = CALayerUITests;
+			sourceTree = "<group>";
+		};
+		8DC890262251C03800EACC02 /* AnimationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8DC88FE52251BEB800EACC02 /* OneLoadingAnimation.gif */,
+				8DC5CB9F2251BD7B00A89ACD /* GFAnimationDemo.h */,
+				8DC5CBA02251BD7B00A89ACD /* GFAnimationDemo.m */,
+				8DC5CBA32251BDC100A89ACD /* ArcToCircleLayer.h */,
+				8DC5CBA42251BDC100A89ACD /* ArcToCircleLayer.m */,
+				8DC5CBA52251BDC100A89ACD /* OneLoadingAnimationView.h */,
+				8DC5CBA22251BDC100A89ACD /* OneLoadingAnimationView.m */,
+			);
+			path = AnimationDemo;
+			sourceTree = "<group>";
+		};
+		8DF4A411224CE25C00F3A857 /* LMJ */ = {
+			isa = PBXGroup;
+			children = (
+				8DF4A414224CE26F00F3A857 /* CALayer1-简介.webarchive */,
+				8DF4A413224CE26F00F3A857 /* CALayer2-创建新的层.webarchive */,
+				8DF4A412224CE26F00F3A857 /* CALayer3-层的属性.webarchive */,
+				8DF4A415224CE26F00F3A857 /* CALayer4-自定义层.webarchive */,
+				8DF4A41A224CE34E00F3A857 /* Core Animation1-简介.webarchive */,
+				8DF4A41B224CE34E00F3A857 /* Core Animation2-CABasicAnimation.webarchive */,
+			);
+			path = LMJ;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D82413A224A19550039A9CA /* CALayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D824167224A19570039A9CA /* Build configuration list for PBXNativeTarget "CALayer" */;
+			buildPhases = (
+				8D824137224A19550039A9CA /* Sources */,
+				8D824138224A19550039A9CA /* Frameworks */,
+				8D824139224A19550039A9CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CALayer;
+			productName = CALayer;
+			productReference = 8D82413B224A19550039A9CA /* CALayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D824152224A19570039A9CA /* CALayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D82416A224A19570039A9CA /* Build configuration list for PBXNativeTarget "CALayerTests" */;
+			buildPhases = (
+				8D82414F224A19570039A9CA /* Sources */,
+				8D824150224A19570039A9CA /* Frameworks */,
+				8D824151224A19570039A9CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D824155224A19570039A9CA /* PBXTargetDependency */,
+			);
+			name = CALayerTests;
+			productName = CALayerTests;
+			productReference = 8D824153224A19570039A9CA /* CALayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D82415D224A19570039A9CA /* CALayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D82416D224A19570039A9CA /* Build configuration list for PBXNativeTarget "CALayerUITests" */;
+			buildPhases = (
+				8D82415A224A19570039A9CA /* Sources */,
+				8D82415B224A19570039A9CA /* Frameworks */,
+				8D82415C224A19570039A9CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D824160224A19570039A9CA /* PBXTargetDependency */,
+			);
+			name = CALayerUITests;
+			productName = CALayerUITests;
+			productReference = 8D82415E224A19570039A9CA /* CALayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D824133224A19550039A9CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = north_feng;
+				TargetAttributes = {
+					8D82413A224A19550039A9CA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8D824152224A19570039A9CA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8D82413A224A19550039A9CA;
+					};
+					8D82415D224A19570039A9CA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8D82413A224A19550039A9CA;
+					};
+				};
+			};
+			buildConfigurationList = 8D824136224A19550039A9CA /* Build configuration list for PBXProject "CALayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D824132224A19550039A9CA;
+			productRefGroup = 8D82413C224A19550039A9CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D82413A224A19550039A9CA /* CALayer */,
+				8D824152224A19570039A9CA /* CALayerTests */,
+				8D82415D224A19570039A9CA /* CALayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D824139224A19550039A9CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DF4A40A224CD79200F3A857 /* 傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive in Resources */,
+				8DC5CB9E2251BA2400A89ACD /* ZFChangeAnimation.gif in Resources */,
+				8D82414B224A19570039A9CA /* LaunchScreen.storyboard in Resources */,
+				8DF4A416224CE26F00F3A857 /* CALayer3-层的属性.webarchive in Resources */,
+				8DF4A40F224CD94800F3A857 /* CALayer总结（二）CAAnimation.webarchive in Resources */,
+				8DF4A417224CE26F00F3A857 /* CALayer2-创建新的层.webarchive in Resources */,
+				8DF4A423224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D绘制基本图形.webarchive in Resources */,
+				8D824174224A1DB50039A9CA /* OneVC.xib in Resources */,
+				8D824148224A19570039A9CA /* Assets.xcassets in Resources */,
+				8DF4A422224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D(自定义UIImageView控件).webarchive in Resources */,
+				8DC88FE62251BEB800EACC02 /* OneLoadingAnimation.gif in Resources */,
+				8DF4A419224CE26F00F3A857 /* CALayer4-自定义层.webarchive in Resources */,
+				8DF4A41C224CE34E00F3A857 /* Core Animation1-简介.webarchive in Resources */,
+				8DF4A421224DFBAC00F3A857 /* UIView封装动画.webarchive in Resources */,
+				8DF4A410224CD94800F3A857 /* CALayer总结（一）CALayer.webarchive in Resources */,
+				8DF4A40C224CD7A100F3A857 /* 哪些我们可以和应该做动画哪.rtfd in Resources */,
+				8DF4A41D224CE34E00F3A857 /* Core Animation2-CABasicAnimation.webarchive in Resources */,
+				8DF4A418224CE26F00F3A857 /* CALayer1-简介.webarchive in Resources */,
+				8D824146224A19550039A9CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D824151224A19570039A9CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D82415C224A19570039A9CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D824137224A19550039A9CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC5CB992251B74700A89ACD /* CAShapeLayer12.m in Sources */,
+				8D4D5BC3224F7123009329C3 /* CATransformLayer17.m in Sources */,
+				8DF4A439224F1D1B00F3A857 /* CALayer7.m in Sources */,
+				8D824184224B1DFD0039A9CA /* GFLayerFuntionDemoVC.m in Sources */,
+				8D824173224A1DB50039A9CA /* OneVC.m in Sources */,
+				8DC5CBA72251BDC200A89ACD /* ArcToCircleLayer.m in Sources */,
+				8D4D5BC0224F4E17009329C3 /* CATiledLayer14.m in Sources */,
+				8DC5CBA12251BD7B00A89ACD /* GFAnimationDemo.m in Sources */,
+				8DF4A433224F15FF00F3A857 /* CAEmitterLayer5.m in Sources */,
+				8DF4A43F224F422400F3A857 /* CAScrollLayer11.m in Sources */,
+				8DC5CB9C2251B9D600A89ACD /* ChangeAnimationView.m in Sources */,
+				8DC5CBA62251BDC200A89ACD /* OneLoadingAnimationView.m in Sources */,
+				8D82414E224A19570039A9CA /* main.m in Sources */,
+				8D824140224A19550039A9CA /* AppDelegate.m in Sources */,
+				8DF4A436224F163F00F3A857 /* CAAnimation0.m in Sources */,
+				8DF4A43C224F1EDC00F3A857 /* CAReplicatorLayer10.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D82414F224A19570039A9CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D824158224A19570039A9CA /* CALayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D82415A224A19570039A9CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D824163224A19570039A9CA /* CALayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D824155224A19570039A9CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D82413A224A19550039A9CA /* CALayer */;
+			targetProxy = 8D824154224A19570039A9CA /* PBXContainerItemProxy */;
+		};
+		8D824160224A19570039A9CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D82413A224A19550039A9CA /* CALayer */;
+			targetProxy = 8D82415F224A19570039A9CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D824144224A19550039A9CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D824145224A19550039A9CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D824149224A19570039A9CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D82414A224A19570039A9CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D824165224A19570039A9CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8D824166224A19570039A9CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D824168224A19570039A9CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN2Z387HMN;
+				INFOPLIST_FILE = CALayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.north-feng.CALayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D824169224A19570039A9CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN2Z387HMN;
+				INFOPLIST_FILE = CALayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.north-feng.CALayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8D82416B224A19570039A9CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN2Z387HMN;
+				INFOPLIST_FILE = CALayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.north-feng.CALayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CALayer.app/CALayer";
+			};
+			name = Debug;
+		};
+		8D82416C224A19570039A9CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN2Z387HMN;
+				INFOPLIST_FILE = CALayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.north-feng.CALayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CALayer.app/CALayer";
+			};
+			name = Release;
+		};
+		8D82416E224A19570039A9CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN2Z387HMN;
+				INFOPLIST_FILE = CALayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.north-feng.CALayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CALayer;
+			};
+			name = Debug;
+		};
+		8D82416F224A19570039A9CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN2Z387HMN;
+				INFOPLIST_FILE = CALayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.north-feng.CALayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CALayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D824136224A19550039A9CA /* Build configuration list for PBXProject "CALayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D824165224A19570039A9CA /* Debug */,
+				8D824166224A19570039A9CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D824167224A19570039A9CA /* Build configuration list for PBXNativeTarget "CALayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D824168224A19570039A9CA /* Debug */,
+				8D824169224A19570039A9CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D82416A224A19570039A9CA /* Build configuration list for PBXNativeTarget "CALayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D82416B224A19570039A9CA /* Debug */,
+				8D82416C224A19570039A9CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D82416D224A19570039A9CA /* Build configuration list for PBXNativeTarget "CALayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D82416E224A19570039A9CA /* Debug */,
+				8D82416F224A19570039A9CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D824133224A19550039A9CA /* Project object */;
+}
