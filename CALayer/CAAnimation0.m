@@ -27,11 +27,11 @@
     
     /**
      
-     <——   CAPropertyAnimation <—— CABasicAnimation(基础动画) <—— CASpringAnimation(弹簧动画)
-     <—— CAKeyframeAnimation(帧动画)
+                  <——   CAPropertyAnimation <—— CABasicAnimation(基础动画) <—— CASpringAnimation(弹簧动画)
+                  <——   CAKeyframeAnimation(帧动画)
      CAAnimation
-     <——   CATransition(转场动画)
-     <——   CAAnimationGroup(动画组)
+                  <——   CATransition(转场动画)
+                  <——   CAAnimationGroup(动画组)
      */
     
     

@@ -24,6 +24,8 @@
 
 #import "GFAnimationDemo.h"
 
+#import "GFUIViewAnimation.h"
+
 @interface GFLayerFuntionDemoVC ()
 
 @end
@@ -93,6 +95,9 @@
             break;
         case 18:
             [self CAValueFunction18];
+            break;
+        case 19:
+            [self uiviewAnimation19];
             break;
             
         default:
@@ -744,6 +749,13 @@
     CA_EXTERN CAValueFunctionName const kCAValueFunctionTranslateY
     CA_EXTERN CAValueFunctionName const kCAValueFunctionTranslateZ
      */
+}
+
+///
+- (void)uiviewAnimation19{
+    
+    GFUIViewAnimation *uiview = [[GFUIViewAnimation alloc] init];
+    [self.navigationController pushViewController:uiview animated:YES];
 }
 
 

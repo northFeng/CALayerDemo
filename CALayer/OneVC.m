@@ -81,6 +81,8 @@
                    @"17 CATransformLayer 做3DLayer效果",
                    
                    @"18 CAValueFunction 动画属性Value—>keyPath",
+                   
+                   @"19 UIView 动画",
                    ];
     
     _arrayTitle = @[
@@ -103,6 +105,7 @@
                    @"CATransform3D",
                    @"CATransformLayer",
                    @"CAValueFunction",
+                   @"GFUIViewAnimation"
                    ];
     
 }

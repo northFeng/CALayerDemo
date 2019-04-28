@@ -26,6 +26,10 @@
 		8DC5CBA62251BDC200A89ACD /* OneLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5CBA22251BDC100A89ACD /* OneLoadingAnimationView.m */; };
 		8DC5CBA72251BDC200A89ACD /* ArcToCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5CBA42251BDC100A89ACD /* ArcToCircleLayer.m */; };
 		8DC88FE62251BEB800EACC02 /* OneLoadingAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8DC88FE52251BEB800EACC02 /* OneLoadingAnimation.gif */; };
+		8DEAF0B92275C53000576028 /* GFUIViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAF0B72275C53000576028 /* GFUIViewAnimation.m */; };
+		8DEAF0BA2275C53000576028 /* GFUIViewAnimation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEAF0B82275C53000576028 /* GFUIViewAnimation.xib */; };
+		8DEAF0BD2275C54A00576028 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DEAF0BB2275C54A00576028 /* 1.jpg */; };
+		8DEAF0BE2275C54A00576028 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DEAF0BC2275C54A00576028 /* 2.jpg */; };
 		8DF4A40A224CD79200F3A857 /* 傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A409224CD79200F3A857 /* 傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive */; };
 		8DF4A40C224CD7A100F3A857 /* 哪些我们可以和应该做动画哪.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A40B224CD7A100F3A857 /* 哪些我们可以和应该做动画哪.rtfd */; };
 		8DF4A40F224CD94800F3A857 /* CALayer总结（二）CAAnimation.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4A40D224CD94800F3A857 /* CALayer总结（二）CAAnimation.webarchive */; };
@@ -99,6 +103,11 @@
 		8DC5CBA42251BDC100A89ACD /* ArcToCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcToCircleLayer.m; sourceTree = "<group>"; };
 		8DC5CBA52251BDC100A89ACD /* OneLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneLoadingAnimationView.h; sourceTree = "<group>"; };
 		8DC88FE52251BEB800EACC02 /* OneLoadingAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = OneLoadingAnimation.gif; sourceTree = "<group>"; };
+		8DEAF0B62275C53000576028 /* GFUIViewAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFUIViewAnimation.h; sourceTree = "<group>"; };
+		8DEAF0B72275C53000576028 /* GFUIViewAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFUIViewAnimation.m; sourceTree = "<group>"; };
+		8DEAF0B82275C53000576028 /* GFUIViewAnimation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GFUIViewAnimation.xib; sourceTree = "<group>"; };
+		8DEAF0BB2275C54A00576028 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		8DEAF0BC2275C54A00576028 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		8DF4A409224CD79200F3A857 /* 傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive"; sourceTree = "<group>"; };
 		8DF4A40B224CD7A100F3A857 /* 哪些我们可以和应该做动画哪.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "哪些我们可以和应该做动画哪.rtfd"; sourceTree = "<group>"; };
 		8DF4A40D224CD94800F3A857 /* CALayer总结（二）CAAnimation.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CALayer总结（二）CAAnimation.webarchive"; sourceTree = "<group>"; };
@@ -183,6 +192,11 @@
 				8DF4A41E224DFBAB00F3A857 /* UIView封装动画.webarchive */,
 				8D82413E224A19550039A9CA /* AppDelegate.h */,
 				8D82413F224A19550039A9CA /* AppDelegate.m */,
+				8DEAF0BB2275C54A00576028 /* 1.jpg */,
+				8DEAF0BC2275C54A00576028 /* 2.jpg */,
+				8DEAF0B62275C53000576028 /* GFUIViewAnimation.h */,
+				8DEAF0B72275C53000576028 /* GFUIViewAnimation.m */,
+				8DEAF0B82275C53000576028 /* GFUIViewAnimation.xib */,
 				8D824170224A1DB50039A9CA /* OneVC.h */,
 				8D824171224A1DB50039A9CA /* OneVC.m */,
 				8D824172224A1DB50039A9CA /* OneVC.xib */,
@@ -366,11 +380,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEAF0BE2275C54A00576028 /* 2.jpg in Resources */,
+				8DEAF0BA2275C53000576028 /* GFUIViewAnimation.xib in Resources */,
 				8DF4A40A224CD79200F3A857 /* 傻傻分不清：Quartz2D、QuartzCore、CoreAnimation、CoreIma... - 简书.webarchive in Resources */,
 				8DC5CB9E2251BA2400A89ACD /* ZFChangeAnimation.gif in Resources */,
 				8D82414B224A19570039A9CA /* LaunchScreen.storyboard in Resources */,
 				8DF4A416224CE26F00F3A857 /* CALayer3-层的属性.webarchive in Resources */,
 				8DF4A40F224CD94800F3A857 /* CALayer总结（二）CAAnimation.webarchive in Resources */,
+				8DEAF0BD2275C54A00576028 /* 1.jpg in Resources */,
 				8DF4A417224CE26F00F3A857 /* CALayer2-创建新的层.webarchive in Resources */,
 				8DF4A423224DFBAC00F3A857 /* iOS开发UI篇—Quartz2D绘制基本图形.webarchive in Resources */,
 				8D824174224A1DB50039A9CA /* OneVC.xib in Resources */,
@@ -413,6 +430,7 @@
 				8D4D5BC3224F7123009329C3 /* CATransformLayer17.m in Sources */,
 				8DF4A439224F1D1B00F3A857 /* CALayer7.m in Sources */,
 				8D824184224B1DFD0039A9CA /* GFLayerFuntionDemoVC.m in Sources */,
+				8DEAF0B92275C53000576028 /* GFUIViewAnimation.m in Sources */,
 				8D824173224A1DB50039A9CA /* OneVC.m in Sources */,
 				8DC5CBA72251BDC200A89ACD /* ArcToCircleLayer.m in Sources */,
 				8D4D5BC0224F4E17009329C3 /* CATiledLayer14.m in Sources */,
