@@ -29,7 +29,7 @@
     //装着CAEmitterCell对象的数组，被用于把粒子投放到layer上
     @property(nullable, copy) NSArray<CAEmitterCell *> *emitterCells;
     //粒子产生系数，默认1.0
-    @property float birthRate;
+    @property float birthRate;//粒子产生系数，默认为1，想关掉就设为0，这样就没有粒子产生了，demo中的暂停效果就是这么实现的。
     //粒子生命周期
     @property float lifetime;
     //发射位置
@@ -41,32 +41,32 @@
     //决定粒子形状的深度联系：emitter shape
     @property CGFloat emitterDepth;
     
-    //发射源的形状
+    //发射源的形状 点、线、矩形、立方体、圆形、球形
     @property(copy) NSString *emitterShape;
     - 取值
-    NSString * const kCAEmitterLayerPoint;
-    NSString * const kCAEmitterLayerLine;
-    NSString * const kCAEmitterLayerRectangle;
-    NSString * const kCAEmitterLayerCuboid;
-    NSString * const kCAEmitterLayerCircle;
-    NSString * const kCAEmitterLayerSphere;
+    NSString * const kCAEmitterLayerPoint;点
+    NSString * const kCAEmitterLayerLine;线
+    NSString * const kCAEmitterLayerRectangle;矩形
+    NSString * const kCAEmitterLayerCuboid;立方体
+    NSString * const kCAEmitterLayerCircle;圆形
+    NSString * const kCAEmitterLayerSphere;球形
     
     //发射模式
     @property(copy) NSString *emitterMode;
     - 取值
-    NSString * const kCAEmitterLayerPoints;
-    NSString * const kCAEmitterLayerOutline;
-    NSString * const kCAEmitterLayerSurface;
-    NSString * const kCAEmitterLayerVolume;
+    NSString * const kCAEmitterLayerPoints;从发射器中
+    NSString * const kCAEmitterLayerOutline;边缘
+    NSString * const kCAEmitterLayerSurface;表面
+    NSString * const kCAEmitterLayerVolume;中点
     
     //渲染模式
     @property(copy) NSString *renderMode;
     - 取值
-    NSString * const kCAEmitterLayerUnordered;
-    NSString * const kCAEmitterLayerOldestFirst;
-    NSString * const kCAEmitterLayerOldestLast;
-    NSString * const kCAEmitterLayerBackToFront;
-    NSString * const kCAEmitterLayerAdditive;
+    NSString * const kCAEmitterLayerUnordered;粒子是无序出现的，多个发射源将混合
+    NSString * const kCAEmitterLayerOldestFirst;声明久的粒子会被渲染在最上层
+    NSString * const kCAEmitterLayerOldestLast;年轻的粒子会被渲染在最上层
+    NSString * const kCAEmitterLayerBackToFront;粒子的渲染按照Z轴的前后顺序进行
+    NSString * const kCAEmitterLayerAdditive;进行粒子混合
     
     //不是多很清楚（粒子是平展在层上）
     @property BOOL preservesDepth;
@@ -97,7 +97,7 @@
     //粒子是否被渲染
     @property(getter=isEnabled) BOOL enabled;
     //粒子参数的速度乘数因子
-    @property float birthRate;
+    @property float birthRate;//每秒粒子产生个数的乘数因子，会和layer的birthRate相乘, 然后确定每秒产生的粒子个数
     //生命周期
     @property float lifetime;
     //生命周期范围

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14E3E11322F96531007ACA57 /* ESFireworkAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E3E11222F96530007ACA57 /* ESFireworkAnimationView.m */; };
+		14E3E11622F9689D007ACA57 /* ESFireworkAnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E3E11522F9689C007ACA57 /* ESFireworkAnimationButton.m */; };
+		14E3E11C22F96C73007ACA57 /* iOS CAEmitterLayer粒子动画详解 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 14E3E11B22F96C73007ACA57 /* iOS CAEmitterLayer粒子动画详解 - 简书.webarchive */; };
+		14E3E12222F97706007ACA57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E3E11F22F97706007ACA57 /* ViewController.m */; };
+		14E3E12322F97706007ACA57 /* FireView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E3E12122F97706007ACA57 /* FireView.m */; };
 		8D4D5BC0224F4E17009329C3 /* CATiledLayer14.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D5BBF224F4E17009329C3 /* CATiledLayer14.m */; };
 		8D4D5BC3224F7123009329C3 /* CATransformLayer17.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D5BC2224F7123009329C3 /* CATransformLayer17.m */; };
 		8D824140224A19550039A9CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D82413F224A19550039A9CA /* AppDelegate.m */; };
@@ -68,6 +73,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14E3E11122F96530007ACA57 /* ESFireworkAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESFireworkAnimationView.h; path = ../ESFireworkAnimationView.h; sourceTree = "<group>"; };
+		14E3E11222F96530007ACA57 /* ESFireworkAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESFireworkAnimationView.m; path = ../ESFireworkAnimationView.m; sourceTree = "<group>"; };
+		14E3E11422F9689C007ACA57 /* ESFireworkAnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESFireworkAnimationButton.h; path = ../ESFireworkAnimationButton.h; sourceTree = "<group>"; };
+		14E3E11522F9689C007ACA57 /* ESFireworkAnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESFireworkAnimationButton.m; path = ../ESFireworkAnimationButton.m; sourceTree = "<group>"; };
+		14E3E11B22F96C73007ACA57 /* iOS CAEmitterLayer粒子动画详解 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "iOS CAEmitterLayer粒子动画详解 - 简书.webarchive"; path = "../iOS CAEmitterLayer粒子动画详解 - 简书.webarchive"; sourceTree = "<group>"; };
+		14E3E11E22F97706007ACA57 /* FireView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireView.h; sourceTree = "<group>"; };
+		14E3E11F22F97706007ACA57 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14E3E12022F97706007ACA57 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14E3E12122F97706007ACA57 /* FireView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireView.m; sourceTree = "<group>"; };
 		8D4D5BBE224F4E17009329C3 /* CATiledLayer14.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATiledLayer14.h; sourceTree = "<group>"; };
 		8D4D5BBF224F4E17009329C3 /* CATiledLayer14.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATiledLayer14.m; sourceTree = "<group>"; };
 		8D4D5BC1224F7123009329C3 /* CATransformLayer17.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATransformLayer17.h; sourceTree = "<group>"; };
@@ -159,6 +173,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14E3E11D22F97555007ACA57 /* 粒子动画 */ = {
+			isa = PBXGroup;
+			children = (
+				14E3E11E22F97706007ACA57 /* FireView.h */,
+				14E3E12122F97706007ACA57 /* FireView.m */,
+				14E3E12022F97706007ACA57 /* ViewController.h */,
+				14E3E11F22F97706007ACA57 /* ViewController.m */,
+				14E3E11B22F96C73007ACA57 /* iOS CAEmitterLayer粒子动画详解 - 简书.webarchive */,
+				14E3E11422F9689C007ACA57 /* ESFireworkAnimationButton.h */,
+				14E3E11522F9689C007ACA57 /* ESFireworkAnimationButton.m */,
+				14E3E11122F96530007ACA57 /* ESFireworkAnimationView.h */,
+				14E3E11222F96530007ACA57 /* ESFireworkAnimationView.m */,
+			);
+			path = "粒子动画";
+			sourceTree = "<group>";
+		};
 		8D824132224A19550039A9CA = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +236,7 @@
 				8DF4A435224F163F00F3A857 /* CAAnimation0.m */,
 				8DF4A431224F15FF00F3A857 /* CAEmitterLayer5.h */,
 				8DF4A432224F15FF00F3A857 /* CAEmitterLayer5.m */,
+				14E3E11D22F97555007ACA57 /* 粒子动画 */,
 				8DF4A437224F1D1B00F3A857 /* CALayer7.h */,
 				8DF4A438224F1D1B00F3A857 /* CALayer7.m */,
 				8DF4A43A224F1EDC00F3A857 /* CAReplicatorLayer10.h */,
@@ -396,6 +427,7 @@
 				8DC88FE62251BEB800EACC02 /* OneLoadingAnimation.gif in Resources */,
 				8DF4A419224CE26F00F3A857 /* CALayer4-自定义层.webarchive in Resources */,
 				8DF4A41C224CE34E00F3A857 /* Core Animation1-简介.webarchive in Resources */,
+				14E3E11C22F96C73007ACA57 /* iOS CAEmitterLayer粒子动画详解 - 简书.webarchive in Resources */,
 				8DF4A421224DFBAC00F3A857 /* UIView封装动画.webarchive in Resources */,
 				8DF4A410224CD94800F3A857 /* CALayer总结（一）CALayer.webarchive in Resources */,
 				8DF4A40C224CD7A100F3A857 /* 哪些我们可以和应该做动画哪.rtfd in Resources */,
@@ -426,8 +458,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E3E12322F97706007ACA57 /* FireView.m in Sources */,
 				8DC5CB992251B74700A89ACD /* CAShapeLayer12.m in Sources */,
 				8D4D5BC3224F7123009329C3 /* CATransformLayer17.m in Sources */,
+				14E3E11322F96531007ACA57 /* ESFireworkAnimationView.m in Sources */,
 				8DF4A439224F1D1B00F3A857 /* CALayer7.m in Sources */,
 				8D824184224B1DFD0039A9CA /* GFLayerFuntionDemoVC.m in Sources */,
 				8DEAF0B92275C53000576028 /* GFUIViewAnimation.m in Sources */,
@@ -439,6 +473,8 @@
 				8DF4A43F224F422400F3A857 /* CAScrollLayer11.m in Sources */,
 				8DC5CB9C2251B9D600A89ACD /* ChangeAnimationView.m in Sources */,
 				8DC5CBA62251BDC200A89ACD /* OneLoadingAnimationView.m in Sources */,
+				14E3E12222F97706007ACA57 /* ViewController.m in Sources */,
+				14E3E11622F9689D007ACA57 /* ESFireworkAnimationButton.m in Sources */,
 				8D82414E224A19570039A9CA /* main.m in Sources */,
 				8D824140224A19550039A9CA /* AppDelegate.m in Sources */,
 				8DF4A436224F163F00F3A857 /* CAAnimation0.m in Sources */,
