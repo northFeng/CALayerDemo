@@ -245,9 +245,6 @@
 				8DF4A43E224F422400F3A857 /* CAScrollLayer11.m */,
 				8DC5CB972251B74700A89ACD /* CAShapeLayer12.h */,
 				8DC5CB982251B74700A89ACD /* CAShapeLayer12.m */,
-				8DC5CB9D2251BA2400A89ACD /* ZFChangeAnimation.gif */,
-				8DC5CB9A2251B9D600A89ACD /* ChangeAnimationView.h */,
-				8DC5CB9B2251B9D600A89ACD /* ChangeAnimationView.m */,
 				8D4D5BBE224F4E17009329C3 /* CATiledLayer14.h */,
 				8D4D5BBF224F4E17009329C3 /* CATiledLayer14.m */,
 				8D4D5BC1224F7123009329C3 /* CATransformLayer17.h */,
@@ -291,6 +288,9 @@
 				8DC5CBA42251BDC100A89ACD /* ArcToCircleLayer.m */,
 				8DC5CBA52251BDC100A89ACD /* OneLoadingAnimationView.h */,
 				8DC5CBA22251BDC100A89ACD /* OneLoadingAnimationView.m */,
+				8DC5CB9D2251BA2400A89ACD /* ZFChangeAnimation.gif */,
+				8DC5CB9A2251B9D600A89ACD /* ChangeAnimationView.h */,
+				8DC5CB9B2251B9D600A89ACD /* ChangeAnimationView.m */,
 			);
 			path = AnimationDemo;
 			sourceTree = "<group>";

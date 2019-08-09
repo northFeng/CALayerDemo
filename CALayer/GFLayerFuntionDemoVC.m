@@ -329,7 +329,7 @@
      
     @property CFTimeInterval timeOffset;//时间偏移量，默认为0
     
-    @property float repeatCount;//重复次数，默认为0
+    @property float repeatCount;//重复次数，默认为0  MAXFLOAT最大
      
     @property CFTimeInterval repeatDuration;//重复间隔，默认为0
     
