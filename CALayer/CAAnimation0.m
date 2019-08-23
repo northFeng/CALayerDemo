@@ -8,7 +8,10 @@
 
 #import "CAAnimation0.h"
 
-@interface CAAnimation0 ()
+@interface CAAnimation0 ()<CAAnimationDelegate>
+
+///
+@property (nonatomic,strong) UIView *animationView;
 
 @end
 
@@ -19,6 +22,83 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *btnOne = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btnOne setTitle:@"开始" forState:UIControlStateNormal];
+    [btnOne setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [btnOne addTarget:self action:@selector(statrAnimation) forControlEvents:UIControlEventTouchUpInside];
+    btnOne.frame = CGRectMake(100, 200, 50, 30);
+    [self.view addSubview:btnOne];
+    
+    UIButton *btnTwo = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btnTwo setTitle:@"停止" forState:UIControlStateNormal];
+    [btnTwo setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [btnTwo addTarget:self action:@selector(startFail) forControlEvents:UIControlEventTouchUpInside];
+    btnTwo.frame = CGRectMake(250, 200, 50, 30);
+    [self.view addSubview:btnTwo];
+    
+    _animationView = [[UIView alloc] initWithFrame:CGRectMake(100, 350, 50, 50)];
+    _animationView.backgroundColor = [UIColor redColor];
+    //[self.view addSubview:_animationView];
+    
+    
+}
+
+- (void)animationDidStart:(CAAnimation *)anim{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self->_animationView removeFromSuperview];
+    });
+    
+}
+
+/* Called when the animation either completes its active duration or
+ * is removed from the object it is attached to (i.e. the layer). 'flag'
+ * is true if the animation reached the end of its active duration
+ * without being removed. */
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+    
+}
+
+///开始
+- (void)statrAnimation{
+    
+    NSArray *array = @[@"fade",@"push",@"moveIn",@"reveal",@"cube",@"oglFlip",@"suckEffect",@"rippleEffect",@"pageCurl",@"pageUnCurl",@"cameraIrisHollowOpen",@"cameraIrisHollowClose"];
+    CATransition *anim = [CATransition animation];
+    anim.repeatCount = 1;
+    anim.duration = 1.0;
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];//计时函数，从头到尾的流畅度
+    anim.type = array[arc4random()%array.count];//layer动画效果
+    anim.subtype = kCATransitionFromRight;//动画控制动画方向
+    anim.delegate = self;
+    
+    [self.navigationController.view.layer addAnimation:anim forKey:nil];
+
+    //[self.view addSubview:_animationView];
+    
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:NO];
+    
+    /**
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.25;
+    transition.type = kCATransitionMoveIn;
+    transition.subtype = kCATransitionFromRight;
+    [containerView.layer addAnimation:transition forKey:nil];
+    //只能操作自视图的layer
+    [containerView exchangeSubviewAtIndex:0 withSubviewAtIndex:1];//containerView必须包括两个以上的自视图
+    //进行跳转
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+    [self.navigationController pushViewController:"你要跳转的页面" animated:NO];
+     */
+}
+
+///停止
+- (void)startFail{
+    
+    
+    
 }
 
 ///0CAAnimation
@@ -70,7 +150,7 @@
      *************************************** CAPropertyAnimation 操作动画基类 ***************************************
      @interface CAPropertyAnimation : CAAnimation
      
-     + (instancetype)animationWithKeyPath:(nullable NSString *)path;
+     + (instancetype)animationWithKeyPath:(nullable NSString *)path;//path为layer的属性，能实现动画的属性，KVC路径
      
      @property(nullable, copy) NSString *keyPath;
      
@@ -207,7 +287,7 @@
      + (void)transitionFromView:(UIView *)fromView toView:(UIView *)toView duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options completion:(void (^ __nullable)(BOOL finished))completion NS_AVAILABLE_IOS(4_0); // toView added to fromView.superview, fromView removed from its superview
      
      *************************************** CAAnimationGroup 动画组 ***************************************
-     
+     //默认组动画当中的动画是 同时! 进行的 ——>先执行了第一个动画,在执行第二个动画 ,我让第二个动画的 beginTime!! 从第一个动画结束后的时间执行,这个就可以做到按顺序执行了,
      @interface CAAnimationGroup : CAAnimation
      
      @property(nullable, copy) NSArray<CAAnimation *> *animations;
@@ -215,6 +295,31 @@
      @end
      */
     
+}
+
+#pragma mark - 基本动画
+- (void)addBaseAnimation{
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position.x"];
+    //只设置toValue，动画会在图层对应当前值与toValue之间渐变
+    animation.fromValue = @100;
+    animation.toValue = @300;
+    //设置动画重复次数
+    animation.repeatCount = 3;
+    //设置动画执行时间
+    animation.duration = 1;
+    //是否接着返回
+    animation.autoreverses = NO;
+    //停止后样式
+    animation.fillMode = kCAFillModeBoth;
+    
+    CALayer *layer = [CALayer layer];
+    layer.backgroundColor = [UIColor redColor].CGColor;
+    layer.frame = CGRectMake(100, 350, 50, 50);
+    [self.view.layer addSublayer:layer];
+    
+    //添加动画到layer
+    [layer addAnimation:animation forKey:@"positon"];
 }
 
 

@@ -126,7 +126,8 @@
 
 ///0CAAnimation
 - (void)CAAnimation0{
-    GFAnimationDemo *animationVC = [[GFAnimationDemo alloc] init];
+    //GFAnimationDemo *animationVC = [[GFAnimationDemo alloc] init];
+    CAAnimation0 *animationVC = [[CAAnimation0 alloc] init];
     [self.navigationController pushViewController:animationVC animated:YES];
 }
 

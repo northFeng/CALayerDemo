@@ -41,6 +41,8 @@
     
     //https://www.kancloud.cn/manual/ios/97798  核心动画高级技巧系列
     
+    //https://github.com/CCBrother/CCAnimation 动画demo别人的
+    
     /**
      CALayer 以及所有的继承类 在使用时， 第一步初始化 [CALayer layer];
                                     第二步设置frame： 必须设置frame

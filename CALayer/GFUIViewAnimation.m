@@ -96,7 +96,7 @@
     anim.type = array[arc4random()%array.count];//rippleEffect
     anim.repeatCount = 1;
     anim.duration = 1.0;
-    anim.timingFunction = UIViewAnimationCurveEaseInOut;//计时函数，从头到尾的流畅度
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:UIViewAnimationCurveEaseInOut];//计时函数，从头到尾的流畅度
     //    anim.type = kCATransitionPush;//动画类型
     anim.subtype = kCATransitionFromRight;//控制动画方向
     [_imageViewTwo.layer addAnimation:anim forKey:nil];
@@ -125,7 +125,7 @@
     //+ (void)animateWithDuration:(NSTimeInterval)duration delay:(NSTimeInterval)delay usingSpringWithDamping:(CGFloat)dampingRatio initialSpringVelocity:(CGFloat)velocity options:(UIViewAnimationOptions)options animations:(void (^)(void))animations completion:(void (^ __nullable)(BOOL finished))completion NS_AVAILABLE_IOS(7_0);
     [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionLayoutSubviews animations:^{
         
-        _imageView.frame = CGRectMake(arc4random()%100, arc4random()%500, 200, 100);
+        self.imageView.frame = CGRectMake(arc4random()%100, arc4random()%500, 200, 100);
         
     } completion:^(BOOL finished) {
         
@@ -141,16 +141,16 @@
     [UIView animateKeyframesWithDuration:8 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
         
         [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:0.25 animations:^{
-            _imageView.frame = CGRectMake(0, 0,200, 100);
+            self.imageView.frame = CGRectMake(0, 0,200, 100);
         }];
         [UIView addKeyframeWithRelativeStartTime:0.25 relativeDuration:0.25 animations:^{
-            _imageView.frame = CGRectMake(50,100, 200, 100);
+            self.imageView.frame = CGRectMake(50,100, 200, 100);
         }];
         [UIView addKeyframeWithRelativeStartTime:0.5 relativeDuration:0.25 animations:^{
-            _imageView.frame = CGRectMake(100,150, 200, 100);
+            self.imageView.frame = CGRectMake(100,150, 200, 100);
         }];
         [UIView addKeyframeWithRelativeStartTime:0.75 relativeDuration:0.25 animations:^{
-            _imageView.frame = CGRectMake(150,200, 200, 100);
+            self.imageView.frame = CGRectMake(150,200, 200, 100);
         }];
     } completion:nil];
     
@@ -224,7 +224,7 @@
     [UIView transitionFromView:_imageView toView:_imageViewTwo duration:2 options:UIViewAnimationOptionTransitionCurlDown completion:^(BOOL finished) {
         
         self.view.backgroundColor = [UIColor redColor];
-        _imageViewTwo.alpha = 1;
+        self.imageViewTwo.alpha = 1;
     }];
     
     

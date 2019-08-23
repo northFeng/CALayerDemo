@@ -14,4 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface GFLabel : UILabel
+
+///进度
+@property (nonatomic,assign) CGFloat progress;
+
+@end
+
 NS_ASSUME_NONNULL_END
