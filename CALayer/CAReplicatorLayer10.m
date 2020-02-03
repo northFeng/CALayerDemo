@@ -127,7 +127,7 @@
     [self.view addSubview:self.bgView];
     
     [self.bgView.layer addSublayer:self.waveLayer];
-    //self.waveLayer.position = self.bgView.center;
+    self.waveLayer.position = self.bgView.center;
     [self.waveLayer start];
 }
 

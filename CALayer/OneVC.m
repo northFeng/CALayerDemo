@@ -42,6 +42,7 @@
     //https://www.kancloud.cn/manual/ios/97798  核心动画高级技巧系列
     
     //https://github.com/CCBrother/CCAnimation 动画demo别人的
+    //https://zsisme.gitbooks.io/ios-/content/index.html 核心动画编程 电子书
     
     /**
      CALayer 以及所有的继承类 在使用时， 第一步初始化 [CALayer layer];
@@ -55,7 +56,7 @@
                    @"1  CADisplayLink openGL刷屏计时器",
                    @"2  CAEAGLLayer openGL相关",//依赖OpenGL框架
                    @"3  CAMetalLayer 3D处理绘制",//依赖Metal框架
-                   
+                   //！！粒子动画——>烟、雨、雾、烟火、火、云
                    @"4  CAEmitterCell 粒子动画",
                    @"5  CAEmitterLayer 粒子动画",//依赖CAEmitterCell进行烟雾，火，雨等等这些效果
                    
@@ -66,6 +67,7 @@
                    @"8  CAMediaTiming 动画协议 控制动画时间属性",//动画时间协议
                    @"9  CAMediaTimingFunction 动画线性变化时间控制函数",//动画线性控制函数
                    
+                   //！！控制多个类似的layer进行 重复的动画
                    @"10 CAReplicatorLayer 复制多个图层,让多个图层进行动画",//实现多个类似的layer进行控制进行动画效果，静态效果
                    
                    @"11 CAScrollLayer 滚动图层",//该图层类 带有滚动API 但layer不带有事件功能

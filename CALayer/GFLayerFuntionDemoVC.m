@@ -663,7 +663,7 @@
     //CATransform3D CATransform3DScale (CATransform3D t, CGFloat sx, CGFloat sy, CGFloat sz) //函数的叠加，效果的叠加——>在CATransform3D t基础上继续变化
     
     
-    /* 3、旋转
+    /* 3、旋转 CATransform3DMakeRotation 总是按 最短路径!!!!!来选择，当顺时针和逆时针的路径相同时，使用逆时针。若需要使其按顺时针旋转，用 CAKeyframeAnimation 并在在顺时针路径上增加几个关键点即可。
      * Returns a transform that rotates by 'angle' radians about the vector
      * '(x, y, z)'. If the vector has length zero the identity transform is
      * returned.
@@ -706,6 +706,38 @@
      * represented exactly by an affine transform the returned value is
      * undefined. */
     //CGAffineTransform CATransform3DGetAffineTransform (CATransform3D t)
+    
+    /** 做圆圈动效
+    CABasicAnimation *oneStep = [CABasicAnimation animationWithKeyPath:@"transform"];
+    oneStep.beginTime = 0.;
+    oneStep.duration = 0.25;
+    oneStep.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0, 0, 1)];
+    oneStep.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2, 0, 0, 1)];
+    
+    CABasicAnimation *twoStep = [CABasicAnimation animationWithKeyPath:@"transform"];
+    twoStep.beginTime = 0.25;
+    twoStep.duration = 0.25;
+    twoStep.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2, 0, 0, 1)];
+    twoStep.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 0, 1)];
+    
+    CABasicAnimation *thrStep = [CABasicAnimation animationWithKeyPath:@"transform"];
+    thrStep.beginTime = 0.5;
+    thrStep.duration = 0.25;
+    thrStep.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 0, 1)];
+    thrStep.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2*3, 0, 0, 1)];
+    
+    CABasicAnimation *forStep = [CABasicAnimation animationWithKeyPath:@"transform"];
+    forStep.beginTime = 0.75;
+    forStep.duration = 0.25;
+    forStep.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2*3, 0, 0, 1)];
+    forStep.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2*4, 0, 0, 1)];
+    
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    group.animations = @[oneStep,twoStep,thrStep,forStep];
+    group.duration = 1.;
+    group.repeatCount = MAXFLOAT;
+    [_bigImgview.layer addAnimation:group forKey:@"transform"];
+     */
 }
 
 ///17CATransformLayer
